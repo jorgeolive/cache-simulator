@@ -1,0 +1,9 @@
+.successLine{
+    background-color: lightgreen;
+    color: limegreen;
+}
+
+.failureLine {
+    background-color: lightpink;
+    color: red;
+}

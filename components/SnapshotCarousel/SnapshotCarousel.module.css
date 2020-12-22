@@ -1,0 +1,22 @@
+
+.container_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.sequenceSection {
+    border-color:  #464ca1;
+    border-style: double;
+    background-color: gainsboro;
+    padding: 15px;
+    margin: 15px;
+  }
+
+.snapshotHeader {
+   text-align: center;
+}
+
+.buttonMargin{
+    margin: 15px;
+  }

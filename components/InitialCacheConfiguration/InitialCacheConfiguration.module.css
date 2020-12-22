@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wholeSection {
+  border-color:  #464ca1;
+  border-style: dashed;
+  padding: 15px;
+  margin: 15px;
+}
+
+.configSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.configSectionRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.buttonMargin{
+  margin: 15px;
+}
+
+
+.initialCacheWrapper {
+  padding: 15px;
+  margin: 15px;
+  justify-content: center;
+}

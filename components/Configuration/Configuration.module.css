@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .configSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .configSectionRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .wholeSection {
+    border-color:  #464ca1;
+    border-style: dashed;
+    padding: 15px;
+    margin: 15px;
+  }

@@ -23,6 +23,8 @@ export class Cache {
         cache.replacementPolicy = this.replacementPolicy;
         cache.snapshots = this.snapshots.map(x => ({ ...x, snapshot: x.snapshot.clone() }));
         cache.initialized = this.initialized;
+        cache.lineReadSequence = this.lineReadSequence;
+        cache.lineWriteSequence = this.lineWriteSequence;
 
         return cache;
     }
@@ -59,6 +61,10 @@ export class Cache {
     initialize = () => {
         this.snapshots = [{ snapshot: Snapshot.createEmpty(this), hitAddress: null }];
         this.initialized = true;
+        this.lineReadSequence = [];
+        for(let index = 0; index < this.numberOfLines; index++){
+            this.lineReadSequence.push(index);
+        }
     }
 
     isConfigured = () => this.numberOfLines !== undefined && this.wordsPerLine !== undefined && this.policy !== undefined;
